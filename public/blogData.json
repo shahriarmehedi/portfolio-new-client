@@ -1,0 +1,24 @@
+[
+    {
+        "blogId": 1,
+        "blogTitle": "FronEnd development & its future",
+        "blogIMG": "https://raw.githubusercontent.com/shahriarmehedi/simple-nav/main/1.png",
+        "blogSubtitle": "Md. Shahriar Mehedi",
+        "blogContent": "Blog content goes here"
+    },
+    {
+        "blogId": 2,
+        "blogTitle": "Evolution of Node.js",
+        "blogIMG": "https://raw.githubusercontent.com/shahriarmehedi/simple-nav/main/2.png",
+        "blogSubtitle": "Md. Shahriar Mehedi",
+        "blogContent": "Blog content goes here"
+    },
+    {
+        "blogId": 3,
+        "blogTitle": "Ui/UX design & tools",
+        "blogIMG": "https://raw.githubusercontent.com/shahriarmehedi/simple-nav/main/6.png",
+        "blogSubtitle": "Md. Shahriar Mehedi",
+        "blogContent": "Blog content goes here"
+    }
+    
+]
