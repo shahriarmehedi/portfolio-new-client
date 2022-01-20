@@ -5,7 +5,7 @@ import shahriar_logo from '../../assets/images/shahriars_logo.png'
 const Navbar = () => {
     return (
         <>
-            <nav className="sticky w-full z-50">
+            <nav className="sticky top-0 w-full z-50">
                 <div className="navbar bg-gray-900  text-neutral-content h-20">
                     <div className="flex-1 px-2 mx-2">
                         <AnchorLink href="#home">
@@ -37,7 +37,7 @@ const Navbar = () => {
                                 BLOGS
 
                             </AnchorLink>
-                            <AnchorLink href="#contact" className="btn px-7 py-2 rounded bg-green-400 text-gray-900 hover:text-white transition duration-500 mx-3">
+                            <AnchorLink href="#contact" className="btn px-7 py-2 rounded bg-emerald-400 text-gray-900 hover:text-white transition duration-500 mx-3">
 
                                 CONTACT
 
@@ -50,29 +50,29 @@ const Navbar = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
                             </svg>
                         </button>
-                        <ul tabIndex="0" className="py-7 shadow-lg mt-96 menu dropdown-content text-gray-900 bg-green-400 rounded-lg w-52">
+                        <ul tabIndex="0" className="py-7 shadow-lg mt-96 menu dropdown-content text-gray-900  bg-emerald-400 rounded-lg w-52">
                             <li>
-                                <AnchorLink href="#home" className="btn bg-green-300 border-0 rounded-btn mx-3 my-1">
+                                <AnchorLink href="#home" className="btn hover:text-white bg-emerald-300 border-0 rounded-btn mx-3 my-1">
                                     HOME
                                 </AnchorLink>
                             </li>
                             <li>
-                                <AnchorLink href="#about" className="btn bg-green-300 border-0 rounded-btn mx-3 my-1">
+                                <AnchorLink href="#about" className="btn hover:text-white bg-emerald-300 border-0 rounded-btn mx-3 my-1">
                                     ABOUT ME
                                 </AnchorLink>
                             </li>
                             <li>
-                                <AnchorLink href="#projects" className="btn bg-green-300 border-0 rounded-btn mx-3 my-1">
+                                <AnchorLink href="#projects" className="btn hover:text-white bg-emerald-300 border-0 rounded-btn mx-3 my-1">
                                     PROJECTS
                                 </AnchorLink>
                             </li>
                             <li>
-                                <AnchorLink href="#blogs" className="btn bg-green-300 border-0 rounded-btn mx-3 my-1">
+                                <AnchorLink href="#blogs" className="btn hover:text-white bg-emerald-300 border-0 rounded-btn mx-3 my-1">
                                     BLOGS
                                 </AnchorLink>
                             </li>
                             <li>
-                                <AnchorLink href="#contact" className="btn bg-green-300 border-0 rounded-btn mx-3 my-1">
+                                <AnchorLink href="#contact" className="btn hover:text-white bg-emerald-300 border-0 rounded-btn mx-3 my-1">
                                     CONTACT
                                 </AnchorLink>
                             </li>

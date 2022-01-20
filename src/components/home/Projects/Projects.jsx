@@ -41,7 +41,7 @@ const Projects = () => {
         <div id="projects" className=" bg-2 text-white pb-20 pt-10">
             <div className="container mx-auto">
                 <h1 className=" pt-24 pb-5 text-4xl font-bold ">My Projects</h1>
-                <hr className="py-1 bg-green-400 w-32 border-none rounded mb-20 mx-auto" />
+                <hr className="py-1 bg-emerald-400 w-32 border-none rounded mb-20 mx-auto" />
                 <Tabs>
                     <TabList className="w-11/12 lg:w-full mx-auto">
                         <Tab>html</Tab>
@@ -52,7 +52,7 @@ const Projects = () => {
                     </TabList>
 
                     <TabPanel id="html">
-                        <h2 className="mt-10 mb-10 text-green-400 text-2xl font-semibold">Projects using html & css only</h2>
+                        <h2 className="mt-10 mb-10 text-emerald-400 text-2xl font-semibold">Projects using html & css only</h2>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
 
                             {
@@ -63,21 +63,21 @@ const Projects = () => {
                                         </div>
                                         <div>
                                             <h2 className=" text-xl mb-2 font-semibold">
-                                                Project: <span className="text-green-400"> {myHtmlProjects.projectName} </span>
+                                                Project: <span className="text-emerald-400"> {myHtmlProjects.projectName} </span>
                                             </h2>
-                                            <p className="text-sm mb-4 text-green-400 font-light">{myHtmlProjects.projectType}</p>
+                                            <p className="text-sm mb-4 text-emerald-400 font-light">{myHtmlProjects.projectType}</p>
                                             <h2>
                                                 Technology Used:
                                             </h2>
                                             <div className="mt-5">
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">html</button>
-                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">css</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">html</button>
+                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">css</button>
                                             </div>
                                             <h3 className="text-gray-300 w-5/6 mx-auto mt-10">
                                                 {myHtmlProjects.projectDescription}
                                             </h3>
                                             <div className=" mt-16">
-                                                <NavLink to={`/projects/${myHtmlProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-green-400 hover:bg-gray-700 hover:text-white transition duration-300 animate-infinite " >View Details</NavLink>
+                                                <NavLink to={`/projects/${myHtmlProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-emerald-400 hover:bg-gray-700 hover:text-white transition duration-300 animate-infinite " >View Details</NavLink>
                                             </div>
                                         </div>
                                     </div>
@@ -91,7 +91,7 @@ const Projects = () => {
 
 
                     <TabPanel id="Javascript">
-                        <h2 className="mt-10 mb-10 text-green-400 text-2xl font-semibold w-11/12 mx-auto">Projects using html, css & Javascript</h2>
+                        <h2 className="mt-10 mb-10 text-emerald-400 text-2xl font-semibold w-11/12 mx-auto">Projects using html, css & Javascript</h2>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
 
                             {
@@ -102,22 +102,22 @@ const Projects = () => {
                                         </div>
                                         <div>
                                             <h2 className=" text-xl mb-2 font-semibold">
-                                                Project: <span className="text-green-400"> {myJavascriptProjects.projectName} </span>
+                                                Project: <span className="text-emerald-400"> {myJavascriptProjects.projectName} </span>
                                             </h2>
-                                            <p className="text-sm mb-4 text-green-400 font-light">{myJavascriptProjects.projectType}</p>
+                                            <p className="text-sm mb-4 text-emerald-400 font-light">{myJavascriptProjects.projectType}</p>
                                             <h2>
                                                 Technology Used:
                                             </h2>
                                             <div className="mt-5">
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">html</button>
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">css</button>
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">Javascript</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">html</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">css</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">Javascript</button>
                                             </div>
                                             <h3 className="text-gray-300 w-5/6 mx-auto mt-10">
                                                 {myJavascriptProjects.projectDescription}
                                             </h3>
                                             <div className=" mt-16">
-                                                <NavLink to={`/projects/${myJavascriptProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-green-400 hover:bg-gray-700 hover:text-white transition duration-300" >View Details</NavLink>
+                                                <NavLink to={`/projects/${myJavascriptProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-emerald-400 hover:bg-gray-700 hover:text-white transition duration-300" >View Details</NavLink>
                                             </div>
                                         </div>
                                     </div>
@@ -132,7 +132,7 @@ const Projects = () => {
 
 
                     <TabPanel id="React">
-                        <h2 className="mt-10 mb-10 text-green-400 text-2xl font-semibold">Projects using React</h2>
+                        <h2 className="mt-10 mb-10 text-emerald-400 text-2xl font-semibold">Projects using React</h2>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
 
                             {
@@ -143,22 +143,22 @@ const Projects = () => {
                                         </div>
                                         <div>
                                             <h2 className=" text-xl mb-2 font-semibold">
-                                                Project: <span className="text-green-400"> {myReactProjects.projectName} </span>
+                                                Project: <span className="text-emerald-400"> {myReactProjects.projectName} </span>
                                             </h2>
-                                            <p className="text-sm mb-4 text-green-400 font-light">{myReactProjects.projectType}</p>
+                                            <p className="text-sm mb-4 text-emerald-400 font-light">{myReactProjects.projectType}</p>
                                             <h2>
                                                 Technology Used:
                                             </h2>
                                             <div className="mt-5">
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">JSX</button>
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">Javascript</button>
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">React</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">JSX</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">Javascript</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">React</button>
                                             </div>
                                             <h3 className="text-gray-300 w-5/6 mx-auto mt-10">
                                                 {myReactProjects.projectDescription}
                                             </h3>
                                             <div className=" mt-16">
-                                                <NavLink to={`/projects/${myReactProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-green-400 hover:bg-gray-700 hover:text-white transition duration-300" >View Details</NavLink>
+                                                <NavLink to={`/projects/${myReactProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-emerald-400 hover:bg-gray-700 hover:text-white transition duration-300" >View Details</NavLink>
                                             </div>
                                         </div>
                                     </div>
@@ -171,7 +171,7 @@ const Projects = () => {
 
 
                     <TabPanel id="Fullstack">
-                        <h2 className="mt-10 mb-10 text-green-400 text-2xl font-semibold w-5/6 mx-auto">Fullstack Projects using MERN stack</h2>
+                        <h2 className="mt-10 mb-10 text-emerald-400 text-2xl font-semibold w-5/6 mx-auto">Fullstack Projects using MERN stack</h2>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
 
                             {
@@ -182,23 +182,23 @@ const Projects = () => {
                                         </div>
                                         <div>
                                             <h2 className="text-xl mb-2 font-semibold">
-                                                Project: <span className="text-green-400"> {myFullstackProjects.projectName} </span>
+                                                Project: <span className="text-emerald-400"> {myFullstackProjects.projectName} </span>
                                             </h2>
-                                            <p className="text-sm mb-4 text-green-400 font-light">{myFullstackProjects.projectType}</p>
+                                            <p className="text-sm mb-4 text-emerald-400 font-light">{myFullstackProjects.projectType}</p>
                                             <h2>
                                                 Technology Used:
                                             </h2>
                                             <div className="mt-5">
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">React</button>
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">Node.js</button>
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">Express</button>
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">Mongodb</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">React</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">Node.js</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">Express</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">Mongodb</button>
                                             </div>
                                             <h3 className="text-gray-300 w-5/6 mx-auto mt-10">
                                                 {myFullstackProjects.projectDescription}
                                             </h3>
                                             <div className=" mt-16">
-                                                <NavLink to={`/projects/${myFullstackProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-green-400 hover:bg-gray-700 hover:text-white transition duration-300" >View Details</NavLink>
+                                                <NavLink to={`/projects/${myFullstackProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-emerald-400 hover:bg-gray-700 hover:text-white transition duration-300" >View Details</NavLink>
                                             </div>
                                         </div>
                                     </div>
@@ -211,7 +211,7 @@ const Projects = () => {
 
 
                     <TabPanel id="All Projects">
-                        <h2 className="mt-10 mb-10 text-green-400 text-2xl font-semibold">All noteworthy projects</h2>
+                        <h2 className="mt-10 mb-10 text-emerald-400 text-2xl font-semibold">All noteworthy projects</h2>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
 
                             {
@@ -222,26 +222,26 @@ const Projects = () => {
                                         </div>
                                         <div>
                                             <h2 className="text-xl mb-2 font-semibold">
-                                                Project: <span className="text-green-400"> {myAllProjects.projectName} </span>
+                                                Project: <span className="text-emerald-400"> {myAllProjects.projectName} </span>
                                             </h2>
-                                            <p className="text-sm mb-4 text-green-400 font-light">{myAllProjects.projectType}</p>
+                                            <p className="text-sm mb-4 text-emerald-400 font-light">{myAllProjects.projectType}</p>
                                             <h2>
                                                 Technology Used:
                                             </h2>
                                             <div className="mt-5">
-                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">html</button>
-                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">css</button>
-                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">Javascript</button>
-                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">React</button>
-                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">Node.js</button>
-                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">Express</button>
-                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-green-400 rounded-full m-1">Mongodb</button>
+                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">html</button>
+                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">css</button>
+                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">Javascript</button>
+                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">React</button>
+                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">Node.js</button>
+                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">Express</button>
+                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">Mongodb</button>
                                             </div>
                                             <h3 className="text-gray-300 w-5/6 mx-auto mt-10">
                                                 {myAllProjects.projectDescription}
                                             </h3>
                                             <div className=" mt-16">
-                                                <NavLink to={`/projects/${myAllProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-green-400 hover:bg-gray-700 hover:text-white transition duration-300" >View Details</NavLink>
+                                                <NavLink to={`/projects/${myAllProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-emerald-400 hover:bg-gray-700 hover:text-white transition duration-300" >View Details</NavLink>
                                             </div>
                                         </div>
                                     </div>

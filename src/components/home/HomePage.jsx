@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from '../shared/Footer';
+import MobileMenu from '../shared/MobileMenu';
 import Navbar from '../shared/Navbar';
 import About from './About/About';
 import Banner from './Banner/Banner';
@@ -17,6 +18,7 @@ const HomePage = () => {
             <Blogs></Blogs>
             <Contact></Contact>
             <Footer></Footer>
+            <MobileMenu></MobileMenu>
         </div>
     );
 };

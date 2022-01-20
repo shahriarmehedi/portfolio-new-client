@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const BackToHome = () => {
     return (
         <div className=" bg-1 pt-10">
-            <NavLink to="/" className="px-5 py-3 bg-green-400 rounded">Back to home</NavLink>
+            <NavLink to="/" className="px-5 py-3 bg-emerald-400 rounded">Back to home</NavLink>
         </div>
     );
 };
