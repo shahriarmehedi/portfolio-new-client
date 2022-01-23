@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import emailjs from 'emailjs-com'
 import Swal from 'sweetalert2';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Contact = () => {
 
     const [processing, setProcessing] = useState(false);
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
 
     const contactFormSubmission = (e) => {
         setProcessing(true);
@@ -44,7 +50,7 @@ const Contact = () => {
         <div id="contact" className=" bg-gray-900 text-white pb-20">
             <h1 className=" pt-24 pb-5 text-4xl font-bold">Contact Me</h1>
             <hr className="py-1 bg-emerald-400 w-32 border-none rounded mb-20 mx-auto" />
-            <div className="bg-3 w-11/12 lg:w-1/2 mx-auto py-5 lg:py-10 rounded-box">
+            <div data-aos="fade-up" data-aos-duration="800" className="bg-3 w-11/12 lg:w-1/2 mx-auto py-5 lg:py-10 rounded-box">
                 <form onSubmit={contactFormSubmission} className="flex flex-col w-11/12 lg:w-5/6 mx-auto" action="">
                     <input required className="rounded text-gray-900 px-5  py-4 my-4" type="text" name="user_name" id="" placeholder="Your Name" />
                     <input required className=" rounded text-gray-900 px-5 py-4 my-4" type="email" name="user_email" id="" placeholder="Email" />

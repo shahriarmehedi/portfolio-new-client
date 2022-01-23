@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import './Projects.css';
 import { NavLink } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Projects = () => {
 
@@ -13,6 +15,10 @@ const Projects = () => {
             .then(data => setProjects(data))
 
     }, [])
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
 
     if (projects.length === 0) {
         return (
@@ -57,7 +63,7 @@ const Projects = () => {
 
                             {
                                 projects.filter(htmlProjects => htmlProjects.projectCategory === "html").map(myHtmlProjects =>
-                                    <div key={myHtmlProjects.projectId} className="animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-3 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
+                                    <div data-aos="fade-up" data-aos-duration="800" key={myHtmlProjects.projectId} className="animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-3 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
                                         <div>
                                             <img className=" transform transition duration-300 hover:scale-125 mx-auto w-11/12 lg:w-full rounded-lg border-8 mb-5 lg:mb-0 border-gray-400 h-96" src={myHtmlProjects.projectIMG} alt="" />
                                         </div>

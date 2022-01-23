@@ -1,9 +1,10 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter'
+import bgBanner from '../../../assets/images/wp7453603-portfolio-wallpapers2.png'
 
 const Banner = () => {
     return (
-        <div id="home" className="h-screen bg-gray-900 text-white text-center lg:text-left ">
+        <div style={{ backgroundImage: `url(${bgBanner})`, backgroundSize: "cover" }} id="home" className="h-screen bg-gray-900 text-white text-center lg:text-left ">
             <div className=" pt-64 lg:pt-80 lg:w-2/3 mx-auto">
                 <h1 className="text-xl lg:text-3xl pb-5 font-thin">HELLO THERE </h1>
                 <h1 className="text-2xl lg:text-6xl font-bold">I'm <span className="text-emerald-400">Md. Shahriar Mehedi</span> </h1>

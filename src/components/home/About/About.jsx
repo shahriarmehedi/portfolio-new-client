@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import my_photo from '../../../assets/images/my_photo.jpg'
 import './About.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
+
+
     return (
         <div id="about" className=" pb-36 bg-1 text-white ">
             <div className="container mx-auto">
                 <h1 className=" pt-24 pb-5 text-4xl font-bold ">About Me</h1>
                 <hr className="py-1 bg-emerald-400 w-32 border-none rounded mb-20 mx-auto" />
-                <div className=" flex items-center flex-col lg:flex-row w-11/12 mx-auto bg-2 py-10 px-3 lg:p-16 rounded-box lg:border-l-8 border-gray-400">
+                <div data-aos="fade-up" data-aos-duration="800" className=" flex items-center flex-col lg:flex-row w-11/12 mx-auto bg-2 py-10 px-3 lg:p-16 rounded-box lg:border-l-8 border-gray-400">
                     <div className="lg:w-1/3">
                         <img className="transform transition duration-300 hover:scale-110 h-60 mb-10 mx-auto lg:h-80 border-8 border-gray-700 rounded-full" src={my_photo} alt="" />
                         <a href="https://github.com/shahriarmehedi" target="_blank" rel="noreferrer" className="px-4 transform transition duration-300 hover:scale-110 border-bottom border-b-2 border-emerald-400 text-3xl py-2 bg-gray-800 text-white rounded m-2"><i className="fab fa-github"></i></a>

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Blogs = () => {
 
@@ -11,6 +13,10 @@ const Blogs = () => {
 
     }, [])
 
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
 
 
     return (
@@ -20,7 +26,7 @@ const Blogs = () => {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 container mx-auto">
                 {
                     blogs.map(blog =>
-                        <div key={blog.blogId} className="pb-10 rounded-box bg-3 w-11/12  mx-auto">
+                        <div data-aos="fade-up" data-aos-duration="800" key={blog.blogId} className="pb-10 rounded-box bg-3 w-11/12  mx-auto">
                             <img className="rounded  h-52 mx-auto mb-5 w-full" src={blog?.blogIMG} alt="" />
                             <h2 className="my-5 w-5/6 mx-auto text-xl font-semibold"> {blog?.blogTitle} </h2>
                             <h3 className="my-5 text-sm"> {blog?.blogSubtitle} </h3>
