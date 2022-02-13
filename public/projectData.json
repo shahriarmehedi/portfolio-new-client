@@ -148,6 +148,21 @@
         "projectLiveSite": "https://shahriar-expresstrip.web.app/",
         "projectClientCode": "https://github.com/shahriarmehedi/express-trip-mern-client-site",
         "projectServerCode": "https://github.com/shahriarmehedi/express-trip-mern-server-site"
+    },
+    {
+        "projectId": "11",
+        "projectName": "Travellio",
+        "projectType": "Travel experience sharing platform",
+        "projectCategory": "Fullstack",
+        "projectTime": "January, 2022",
+        "projectDescription": "This is a travel experience relataed website where registered users can share their travel experience",
+        "projectDetails": "This is a travel experience relataed website where registered users can share their travel experience and share tour information among the community",
+        "projectIMG": "https://i.ibb.co/zRHMBF1/Travellio.png",
+        "projectIMG2": "",
+        "projectIMG3": "",
+        "projectLiveSite": "https://shahriar-travellio.web.app/",
+        "projectClientCode": "https://github.com/shahriarmehedi/travellio-mern-travel-review-client",
+        "projectServerCode": "https://github.com/shahriarmehedi/travellio-mern-travel-review-server"
     }
 
 ]
