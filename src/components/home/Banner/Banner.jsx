@@ -20,7 +20,7 @@ const Banner = () => {
                     />
                 </span>
                 </h2>
-                <a href="https://shahriar.work/RESUME_Md_Shahriar_Mehedi_27NOV.pdf" target="_blank" rel="noreferrer" className="hover:bg-gray-800 shadow-emerald-400/30 shadow-lg transition duration-500 mx-auto px-10 py-4  lg:px-12 lg:py-4  bg-emerald-400 rounded-full text-white">Download Resume</a>
+                <a href="https://shahriar.work/RESUME_Md_Shahriar_Mehedi.pdf" target="_blank" rel="noreferrer" className="hover:bg-gray-800 shadow-emerald-400/30 shadow-lg transition duration-500 mx-auto px-10 py-4  lg:px-12 lg:py-4  bg-emerald-400 rounded-full text-white">Download Resume</a>
             </div>
         </div>
     );
