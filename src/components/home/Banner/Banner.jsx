@@ -5,7 +5,7 @@ import bgBanner from '../../../assets/images/wp7453603-portfolio-wallpapers3.png
 const Banner = () => {
     return (
         <div style={{ backgroundImage: `url(${bgBanner})`, backgroundSize: "cover" }} id="home" className="h-screen bg-gray-900 text-white text-center lg:text-left ">
-            <div className=" pt-64 lg:pt-72 lg:w-2/3 mx-auto">
+            <div className=" pt-52 lg:pt-72 lg:w-2/3 mx-auto">
                 <h1 className="text-xl lg:text-3xl pb-5 font-thin">H E L L O  </h1>
                 <h1 className="text-2xl lg:text-6xl font-bold">I'm <span className="text-emerald-400">Md. Shahriar Mehedi</span> </h1>
                 <h2 className="text-2xl  lg:text-5xl font-bold pt-5 mb-16"><span>
