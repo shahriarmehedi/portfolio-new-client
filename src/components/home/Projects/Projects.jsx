@@ -22,7 +22,7 @@ const Projects = () => {
 
     if (projects.length === 0) {
         return (
-            <div className="bg-2 text-white py-5">
+            <div className="bg-zinc-800 text-white py-5">
                 <h1 className=" py-24 text-4xl font-bold">My Projects</h1>
                 <h2 className="text-xl my-7">Loading Projects..</h2>
                 <div className="flex justify-center items-center">
@@ -44,7 +44,7 @@ const Projects = () => {
 
 
     return (
-        <div id="projects" className=" bg-2 text-white pb-20 pt-10">
+        <div id="projects" className=" bg-[#1c1c1c] text-white pb-20 pt-10">
             <div className="container mx-auto">
                 <h1 className=" pt-24 pb-5 text-4xl font-bold ">My Projects</h1>
                 <hr className="py-1 bg-emerald-400 w-32 border-none rounded mb-20 mx-auto" />
@@ -63,7 +63,7 @@ const Projects = () => {
 
                             {
                                 projects.filter(htmlProjects => htmlProjects.projectCategory === "html").map(myHtmlProjects =>
-                                    <div data-aos="fade-up" data-aos-duration="800" key={myHtmlProjects.projectId} className="animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-3 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
+                                    <div data-aos="fade-up" data-aos-duration="800" key={myHtmlProjects.projectId} className="animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-zinc-800 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
                                         <div>
                                             <img className=" transform transition duration-300 hover:scale-125 mx-auto w-11/12 lg:w-full rounded-lg border-8 mb-5 lg:mb-0 border-gray-400 h-96" src={myHtmlProjects.projectIMG} alt="" />
                                         </div>
@@ -76,14 +76,14 @@ const Projects = () => {
                                                 Technology Used:
                                             </h2>
                                             <div className="mt-5">
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">html</button>
-                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">css</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">html</button>
+                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">css</button>
                                             </div>
                                             <h3 className="text-gray-300 w-5/6 mx-auto mt-10">
                                                 {myHtmlProjects.projectDescription}
                                             </h3>
                                             <div className=" mt-16">
-                                                <NavLink to={`/projects/${myHtmlProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-emerald-400 hover:bg-gray-700 hover:text-white transition duration-300 animate-infinite " >View Details</NavLink>
+                                                <NavLink to={`/projects/${myHtmlProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-emerald-400 hover:bg-zinc-700 hover:text-white transition duration-300 animate-infinite " >View Details</NavLink>
                                             </div>
                                         </div>
                                     </div>
@@ -102,7 +102,7 @@ const Projects = () => {
 
                             {
                                 projects.filter(javascriptProjects => javascriptProjects.projectCategory === "Javascript").map(myJavascriptProjects =>
-                                    <div key={myJavascriptProjects.projectId} className=" animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-3 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
+                                    <div key={myJavascriptProjects.projectId} className=" animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-zinc-800 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
                                         <div>
                                             <img className="transform transition duration-300 hover:scale-125 mx-auto w-11/12 lg:w-full rounded-lg border-8 mb-5 lg:mb-0 border-gray-400 h-96" src={myJavascriptProjects.projectIMG} alt="" />
                                         </div>
@@ -115,15 +115,15 @@ const Projects = () => {
                                                 Technology Used:
                                             </h2>
                                             <div className="mt-5">
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">html</button>
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">css</button>
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">Javascript</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">html</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">css</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">Javascript</button>
                                             </div>
                                             <h3 className="text-gray-300 w-5/6 mx-auto mt-10">
                                                 {myJavascriptProjects.projectDescription}
                                             </h3>
                                             <div className=" mt-16">
-                                                <NavLink to={`/projects/${myJavascriptProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-emerald-400 hover:bg-gray-700 hover:text-white transition duration-300" >View Details</NavLink>
+                                                <NavLink to={`/projects/${myJavascriptProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-emerald-400 hover:bg-zinc-700 hover:text-white transition duration-300" >View Details</NavLink>
                                             </div>
                                         </div>
                                     </div>
@@ -143,7 +143,7 @@ const Projects = () => {
 
                             {
                                 projects.filter(reactProjects => reactProjects.projectCategory === "React" || reactProjects.projectCategory === "Fullstack").map(myReactProjects =>
-                                    <div key={myReactProjects.projectId} className=" animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-3 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
+                                    <div key={myReactProjects.projectId} className=" animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-zinc-800 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
                                         <div>
                                             <img className="transform transition duration-300 hover:scale-125 mx-auto w-11/12 lg:w-full rounded-lg border-8 mb-5 lg:mb-0 border-gray-400 h-96" src={myReactProjects.projectIMG} alt="" />
                                         </div>
@@ -156,15 +156,15 @@ const Projects = () => {
                                                 Technology Used:
                                             </h2>
                                             <div className="mt-5">
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">JSX</button>
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">Javascript</button>
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">React</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">JSX</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">Javascript</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">React</button>
                                             </div>
                                             <h3 className="text-gray-300 w-5/6 mx-auto mt-10">
                                                 {myReactProjects.projectDescription}
                                             </h3>
                                             <div className=" mt-16">
-                                                <NavLink to={`/projects/${myReactProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-emerald-400 hover:bg-gray-700 hover:text-white transition duration-300" >View Details</NavLink>
+                                                <NavLink to={`/projects/${myReactProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-emerald-400 hover:bg-zinc-700 hover:text-white transition duration-300" >View Details</NavLink>
                                             </div>
                                         </div>
                                     </div>
@@ -182,7 +182,7 @@ const Projects = () => {
 
                             {
                                 projects.filter(fullstackProjects => fullstackProjects.projectCategory === "Fullstack").map(myFullstackProjects =>
-                                    <div key={myFullstackProjects.projectId} className=" animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-3 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
+                                    <div key={myFullstackProjects.projectId} className=" animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-zinc-800 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
                                         <div>
                                             <img className="transform transition duration-300 hover:scale-125 mx-auto w-11/12 lg:w-full rounded-lg border-8 mb-5 lg:mb-0 border-gray-400 h-96" src={myFullstackProjects.projectIMG} alt="" />
                                         </div>
@@ -195,16 +195,16 @@ const Projects = () => {
                                                 Technology Used:
                                             </h2>
                                             <div className="mt-5">
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">React</button>
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">Node.js</button>
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">Express</button>
-                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">Mongodb</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">React</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">Node.js</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">Express</button>
+                                                <button className=" transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">Mongodb</button>
                                             </div>
                                             <h3 className="text-gray-300 w-5/6 mx-auto mt-10">
                                                 {myFullstackProjects.projectDescription}
                                             </h3>
                                             <div className=" mt-16">
-                                                <NavLink to={`/projects/${myFullstackProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-emerald-400 hover:bg-gray-700 hover:text-white transition duration-300" >View Details</NavLink>
+                                                <NavLink to={`/projects/${myFullstackProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-emerald-400 hover:bg-zinc-700 hover:text-white transition duration-300" >View Details</NavLink>
                                             </div>
                                         </div>
                                     </div>
@@ -222,7 +222,7 @@ const Projects = () => {
 
                             {
                                 projects.map(myAllProjects =>
-                                    <div key={myAllProjects.projectId} className=" animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-3 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
+                                    <div key={myAllProjects.projectId} className=" animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-zinc-800 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
                                         <div>
                                             <img className="transform transition duration-300 hover:scale-125 mx-auto w-11/12 lg:w-full rounded-lg border-8 mb-5 lg:mb-0 border-gray-400 h-96" src={myAllProjects.projectIMG} alt="" />
                                         </div>
@@ -235,19 +235,19 @@ const Projects = () => {
                                                 Technology Used:
                                             </h2>
                                             <div className="mt-5">
-                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">html</button>
-                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">css</button>
-                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">Javascript</button>
-                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">React</button>
-                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">Node.js</button>
-                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">Express</button>
-                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-gray-700 text-emerald-400 rounded-full m-1">Mongodb</button>
+                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">html</button>
+                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">css</button>
+                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">Javascript</button>
+                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">React</button>
+                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">Node.js</button>
+                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">Express</button>
+                                                <button className="transform transition cursor-default duration-300 hover:scale-125 px-3 font-light py-1 text-sm bg-zinc-700 text-emerald-400 rounded-full m-1">Mongodb</button>
                                             </div>
                                             <h3 className="text-gray-300 w-5/6 mx-auto mt-10">
                                                 {myAllProjects.projectDescription}
                                             </h3>
                                             <div className=" mt-16">
-                                                <NavLink to={`/projects/${myAllProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-emerald-400 hover:bg-gray-700 hover:text-white transition duration-300" >View Details</NavLink>
+                                                <NavLink to={`/projects/${myAllProjects.projectId}`} className="px-5 mx-2 text-gray-900 py-2 rounded bg-emerald-400 hover:bg-zinc-700 hover:text-white transition duration-300" >View Details</NavLink>
                                             </div>
                                         </div>
                                     </div>

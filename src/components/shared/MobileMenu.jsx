@@ -3,8 +3,8 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const MobileMenu = () => {
     return (
-        <div className='bg-gray-900 w-full sticky bottom-0 md:hidden overflow-hidden'>
-            <div className='text-sm h-[58px] rounded-tl-xl rounded-tr-xl bg-slate-800 flex justify-between text-white '>
+        <div className='bg-[#1c1c1c] w-full sticky bottom-0 md:hidden overflow-hidden'>
+            <div className='text-sm h-[65px] bg-[#252a35] flex justify-between text-white '>
                 <div>
                     <AnchorLink href="#home">
                         <div className='px-4 h-full cursor-pointer hover:bg-emerald-400 flex justify-center flex-col'>
