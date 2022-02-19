@@ -102,7 +102,7 @@ const Projects = () => {
 
                             {
                                 projects.filter(javascriptProjects => javascriptProjects.projectCategory === "Javascript").map(myJavascriptProjects =>
-                                    <div key={myJavascriptProjects.projectId} className=" animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-zinc-800 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
+                                    <div data-aos="fade-up" data-aos-duration="800" key={myJavascriptProjects.projectId} className=" animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-zinc-800 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
                                         <div>
                                             <img className="transform transition duration-300 hover:scale-125 mx-auto w-11/12 lg:w-full rounded-lg border-8 mb-5 lg:mb-0 border-gray-400 h-96" src={myJavascriptProjects.projectIMG} alt="" />
                                         </div>
@@ -143,7 +143,7 @@ const Projects = () => {
 
                             {
                                 projects.filter(reactProjects => reactProjects.projectCategory === "React" || reactProjects.projectCategory === "Fullstack").map(myReactProjects =>
-                                    <div key={myReactProjects.projectId} className=" animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-zinc-800 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
+                                    <div data-aos="fade-up" data-aos-duration="800" key={myReactProjects.projectId} className=" animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-zinc-800 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
                                         <div>
                                             <img className="transform transition duration-300 hover:scale-125 mx-auto w-11/12 lg:w-full rounded-lg border-8 mb-5 lg:mb-0 border-gray-400 h-96" src={myReactProjects.projectIMG} alt="" />
                                         </div>
@@ -182,7 +182,7 @@ const Projects = () => {
 
                             {
                                 projects.filter(fullstackProjects => fullstackProjects.projectCategory === "Fullstack").map(myFullstackProjects =>
-                                    <div key={myFullstackProjects.projectId} className=" animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-zinc-800 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
+                                    <div data-aos="fade-up" data-aos-duration="800" key={myFullstackProjects.projectId} className=" animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-zinc-800 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
                                         <div>
                                             <img className="transform transition duration-300 hover:scale-125 mx-auto w-11/12 lg:w-full rounded-lg border-8 mb-5 lg:mb-0 border-gray-400 h-96" src={myFullstackProjects.projectIMG} alt="" />
                                         </div>
@@ -222,7 +222,7 @@ const Projects = () => {
 
                             {
                                 projects.map(myAllProjects =>
-                                    <div key={myAllProjects.projectId} className=" animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-zinc-800 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
+                                    <div data-aos="fade-up" data-aos-duration="800" key={myAllProjects.projectId} className=" animate-bounceIn animate-animated grid grid-cols-1 lg:grid-cols-2 bg-zinc-800 w-11/12 lg:w-full mx-auto rounded-box pt-5 pb-10 lg:py-10 lg:pl-10">
                                         <div>
                                             <img className="transform transition duration-300 hover:scale-125 mx-auto w-11/12 lg:w-full rounded-lg border-8 mb-5 lg:mb-0 border-gray-400 h-96" src={myAllProjects.projectIMG} alt="" />
                                         </div>
