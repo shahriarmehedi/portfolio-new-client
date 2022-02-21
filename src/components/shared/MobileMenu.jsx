@@ -8,7 +8,7 @@ const MobileMenu = () => {
                 <div>
                     <AnchorLink href="#home">
                         <div className='px-4 h-full cursor-pointer hover:bg-emerald-400 flex justify-center flex-col'>
-                            <i class="fas fa-house-user text-lg"></i>
+                            <i className="fas fa-house-user text-lg"></i>
                             <button className='text-xs py-[2px] text-slate-50'>HOME</button>
                         </div>
                     </AnchorLink>
@@ -18,7 +18,7 @@ const MobileMenu = () => {
                 <div>
                     <AnchorLink href="#about">
                         <div className='px-3 h-full cursor-pointer hover:bg-emerald-400 flex justify-center flex-col'>
-                            <i class="fas fa-address-card text-lg"></i>
+                            <i className="fas fa-address-card text-lg"></i>
                             <button className='text-xs py-[2px] text-slate-50'>ABOUT</button>
                         </div>
                     </AnchorLink>
@@ -28,7 +28,7 @@ const MobileMenu = () => {
                 <div>
                     <AnchorLink href="#projects">
                         <div className='px-2 h-full cursor-pointer hover:bg-emerald-400 flex justify-center flex-col'>
-                            <i class="fas fa-briefcase text-lg"></i>
+                            <i className="fas fa-briefcase text-lg"></i>
                             <button className='text-xs py-[2px] text-slate-50'>PROJECTS</button>
                         </div>
                     </AnchorLink>
@@ -38,7 +38,7 @@ const MobileMenu = () => {
                 <div>
                     <AnchorLink href="#blogs">
                         <div className='px-3 h-full cursor-pointer hover:bg-emerald-400 flex justify-center flex-col'>
-                            <i class="fab fa-blogger text-lg"></i>
+                            <i className="fab fa-blogger text-lg"></i>
                             <button className='text-xs py-[2px] text-slate-50'>BLOGS</button>
                         </div>
                     </AnchorLink>
@@ -48,7 +48,7 @@ const MobileMenu = () => {
                 <div>
                     <AnchorLink href="#contact">
                         <div className='pl-2 pr-4 h-full cursor-pointer hover:bg-emerald-400 flex justify-center flex-col'>
-                            <i class="fas fa-envelope-open text-lg"></i>
+                            <i className="fas fa-envelope-open text-lg"></i>
                             <button className='text-xs py-[2px] text-slate-50'>CONTACT</button>
                         </div>
                     </AnchorLink>

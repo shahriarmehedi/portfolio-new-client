@@ -8,7 +8,7 @@ import Blogs from './Blogs/Blogs';
 import Contact from './Contact/Contact';
 import Projects from './Projects/Projects';
 
-const HomePage = () => {
+const HomePage = ({ useDarkMode }) => {
     return (
         <div>
             <Navbar></Navbar>
