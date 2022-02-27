@@ -47,17 +47,17 @@ const Contact = () => {
 
 
     return (
-        <div id="contact" className=" bg-[#1c1c1c] text-white pb-32">
-            <h1 className=" pt-24 pb-5 text-4xl font-bold">Contact Me</h1>
+        <div id="contact" className=" dark:bg-[#1c1c1c] bg-slate-100 text-white pb-32">
+            <h1 className=" pt-24 pb-5 text-4xl font-bold text-slate-700 dark:text-white">Contact Me</h1>
             <hr className="py-1 bg-emerald-400 w-32 border-none rounded mb-20 mx-auto" />
-            <div data-aos="fade-up" data-aos-duration="800" className="bg-zinc-800 w-11/12 lg:w-1/2 mx-auto py-5 lg:py-10 rounded-box">
+            <div data-aos="fade-up" data-aos-duration="800" className="dark:bg-zinc-800 bg-slate-300 w-11/12 lg:w-1/2 mx-auto py-5 lg:py-14 rounded-box">
                 <form onSubmit={contactFormSubmission} className="flex flex-col w-11/12 lg:w-5/6 mx-auto" action="">
-                    <input required className="rounded text-gray-900 px-5  py-4 my-4" type="text" name="user_name" id="" placeholder="Your Name" />
-                    <input required className=" rounded text-gray-900 px-5 py-4 my-4" type="email" name="user_email" id="" placeholder="Email" />
-                    <textarea required className=" text-gray-900 px-5 pt-5 rounded my-4" name="user_message" placeholder="Type your message" id="" cols="30" rows="5"></textarea>
+                    <input required className="rounded outline-none text-gray-900 px-5  py-4 my-4" type="text" name="user_name" id="" placeholder="Your Name" />
+                    <input required className=" rounded outline-none text-gray-900 px-5 py-4 my-4" type="email" name="user_email" id="" placeholder="Email" />
+                    <textarea required className=" text-gray-900 outline-none px-5 pt-5 rounded my-4" name="user_message" placeholder="Type your message" id="" cols="30" rows="5"></textarea>
                     {
-                        processing ? <input className=" rounded text-gray-900 cursor-pointer bg-emerald-400 my-4 px-20 py-4" type="submit" value="Please Wait" /> :
-                            <input className=" rounded text-gray-900 cursor-pointer bg-emerald-400 my-4 px-20 py-4" type="submit" value="SEND" />
+                        processing ? <input className=" rounded text-white dark:text-gray-900 cursor-pointer bg-emerald-500 dark:bg-emerald-400 my-4 px-20 py-4" type="submit" value="Sending..." /> :
+                            <input className=" rounded text-white dark:text-gray-900 cursor-pointer bg-emerald-500 dark:bg-emerald-400 my-4 px-20 py-4" type="submit" value="SEND" />
                     }
                 </form>
             </div>

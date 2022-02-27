@@ -107,11 +107,11 @@ const Projects = () => {
                                             <img className="transform transition duration-300 hover:scale-125 mx-auto w-11/12 lg:w-full rounded-lg border-8 mb-5 lg:mb-0 border-gray-400 h-96" src={myJavascriptProjects.projectIMG} alt="" />
                                         </div>
                                         <div>
-                                            <h2 className=" text-xl mb-2 font-semibold">
+                                            <h2 className="text-white text-xl mb-2 font-semibold">
                                                 Project: <span className="text-emerald-400"> {myJavascriptProjects.projectName} </span>
                                             </h2>
                                             <p className="text-sm mb-4 text-emerald-400 font-light">{myJavascriptProjects.projectType}</p>
-                                            <h2>
+                                            <h2 className='text-white'>
                                                 Technology Used:
                                             </h2>
                                             <div className="mt-5">
@@ -148,11 +148,11 @@ const Projects = () => {
                                             <img className="transform transition duration-300 hover:scale-125 mx-auto w-11/12 lg:w-full rounded-lg border-8 mb-5 lg:mb-0 border-gray-400 h-96" src={myReactProjects.projectIMG} alt="" />
                                         </div>
                                         <div>
-                                            <h2 className=" text-xl mb-2 font-semibold">
+                                            <h2 className="text-white text-xl mb-2 font-semibold">
                                                 Project: <span className="text-emerald-400"> {myReactProjects.projectName} </span>
                                             </h2>
                                             <p className="text-sm mb-4 text-emerald-400 font-light">{myReactProjects.projectType}</p>
-                                            <h2>
+                                            <h2 className='text-white'>
                                                 Technology Used:
                                             </h2>
                                             <div className="mt-5">
@@ -187,11 +187,11 @@ const Projects = () => {
                                             <img className="transform transition duration-300 hover:scale-125 mx-auto w-11/12 lg:w-full rounded-lg border-8 mb-5 lg:mb-0 border-gray-400 h-96" src={myFullstackProjects.projectIMG} alt="" />
                                         </div>
                                         <div>
-                                            <h2 className="text-xl mb-2 font-semibold">
+                                            <h2 className="text-white text-xl mb-2 font-semibold">
                                                 Project: <span className="text-emerald-400"> {myFullstackProjects.projectName} </span>
                                             </h2>
                                             <p className="text-sm mb-4 text-emerald-400 font-light">{myFullstackProjects.projectType}</p>
-                                            <h2>
+                                            <h2 className='text-white'>
                                                 Technology Used:
                                             </h2>
                                             <div className="mt-5">
@@ -236,11 +236,11 @@ const Projects = () => {
                                             <img className="transform transition duration-300 hover:scale-125 mx-auto w-11/12 lg:w-full rounded-lg border-8 mb-5 lg:mb-0 border-gray-400 h-96" src={myAllProjects.projectIMG} alt="" />
                                         </div>
                                         <div>
-                                            <h2 className="text-xl mb-2 font-semibold">
+                                            <h2 className="text-white text-xl mb-2 font-semibold">
                                                 Project: <span className="text-emerald-400"> {myAllProjects.projectName} </span>
                                             </h2>
                                             <p className="text-sm mb-4 text-emerald-400 font-light">{myAllProjects.projectType}</p>
-                                            <h2>
+                                            <h2 className='text-white'>
                                                 Technology Used:
                                             </h2>
                                             <div className="mt-5">
