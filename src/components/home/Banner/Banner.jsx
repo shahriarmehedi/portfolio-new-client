@@ -24,7 +24,7 @@ const Banner = () => {
                     <a href="https://www.linkedin.com/in/shahriarmehedi/" target="_blank" rel="noreferrer" className="px-4 transform transition duration-300 hover:scale-110 border-bottom border-b-2 border-emerald-400 text-xl py-2  bg-zinc-700 text-white rounded m-2"><i className="fab fa-linkedin hover:text-emerald-400 transition duration-300"></i></a>
 
                 </div>
-                <a href="https://shahriar.work/RESUME_Md_Shahriar_Mehedi.pdf" target="_blank" rel="noreferrer" className="hover:bg-zinc-800 hover:text-white shadow-emerald-400/30 shadow-lg transition duration-500 mx-auto px-10 py-4  lg:px-12 lg:py-4  bg-emerald-400 rounded-full text-zinc-800 font-semibold">My Resume</a>
+                <a href="https://drive.google.com/file/d/1FxbogGLvHZ0fHZsDo_IgiF3K0kgtS601/view?usp=sharing" target="_blank" rel="noreferrer" className="hover:bg-zinc-800 hover:text-white shadow-emerald-400/30 shadow-lg transition duration-500 mx-auto px-10 py-4  lg:px-12 lg:py-4  bg-emerald-400 rounded-full text-zinc-800 font-semibold">My Resume</a>
             </div>
         </div>
     );
